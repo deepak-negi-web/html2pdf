@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Noto+Sans|PT+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="table-responsive-sm " id="main-table">
+        <table class="table table-borderless table-sm">
+          <tr>
+            <td>
+              <table id="table1">
+                <tr>
+                  <td>Issue Date: </td>
+                  <td> 03/12/19</td>
+                </tr>
+                <tr>
+                  <td>Due Date:</td>
+                  <td>04/02/19</td>
+                </tr>
+                <tr>
+                  <td>Net:</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>Currency:</td>
+                  <td>USD</td>
+                </tr>
+                <tr>
+                  <td>P.O.#</td>
+                  <td>1/3-147</td>
+                </tr>
+              </table>
+            </td>
+
+            <td>
+              <table id="table2">
+                <tr>
+                  <td>Bill to:</td>
+                </tr>
+                <tr>
+                  <td><strong>Slate Rock and Gravel Company</strong></td>
+                </tr>
+                <tr>
+                  <td>222 Rocky Way</td>
+                </tr>
+                <tr>
+                  <td>30000 Bedrock, Cobblestone County</td>
+                </tr>
+                <tr>
+                  <td>+555 7 123-5555</td>
+                </tr>
+                <tr>
+                  <td>fred@rockgravel.bed</td>
+                </tr>
+                <tr>
+                  <td>Attn:Fred Flintstone</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="container table-responsive-sm" style=" width:60%;margin-left:16%;">
+        <table class="table table-sm bill" id="table3">
+          <thead>
+            <th style="width:2%; text-align:center;">Item</th>
+            <th style="width:1%;">Quantity</th>
+            <th style="width:1%;">Price</th>
+            <th style="width: 1%;">GST</th>
+            <th style="width: 0.1%;">Linetotal</th>
+          </thead>
+          <tr>
+            <td style="text-align:center;">Frozen Brontosaurus Ribs</td>
+            <td>2</td>
+            <td>120</td>
+            <td>2%</td>
+            <td>₹240.00</td>
+          </tr>
+        </table>
+
+        <div class="d-flex" id="content1">
+          <div class=" total ml-auto">TOTAL:</div>
+          <div class=" Rs">₹244.80</div>
+        </div>
+
+      </div>
+      <button type="button" class="btn btn-outline-primary" onclick="generate_pdf()">Generate PDF</button>
+
+
+      <!-- <script src='https://cdn.rawgit.com/simonbengtsson/jsPDF/requirejs-fix-dist/dist/jspdf.debug.js'></script>
+      <script src='https://unpkg.com/jspdf-autotable@2.3.2'></script> -->
+      <script src="js/jspdf.min.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/jspdf.plugin.autotable.min.js"></script>
+      <script src="js/jsPdf_Plugins.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,37 @@
+.body {
+  margin: 0;
+}
+
+.table-responsive-sm {
+  margin-top: 3rem;
+  font-family: 'Mukta', sans-serif;
+}
+
+#main-table {
+  width: 70%;
+  margin-left: 8%;
+}
+
+#table1 {
+  margin: 4rem 8rem 0;
+  /* margin-top: 4rem;
+  margin-left: 10rem; */
+}
+
+#table2 {
+  margin-left: 10rem;
+}
+
+.Rs {
+  padding-left: 22%;
+  padding-right: 3%;
+}
+
+.total {
+  color: red;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 2rem 0 2rem 36rem;
+}
